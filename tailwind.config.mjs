@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'payflo-purple': '#7928CA',
+        'rich-green': '#1E7E34',       // سبز پولدار اصلی (مثل رنگ امیرتتلو)
+        'rich-green-light': '#28A745', // سبز روشن‌تر برای هاور و افکت‌ها
+        'rich-green-dark': '#155D27',  // سبز تیره برای حالت فعال و سایه‌ها
         'payflo-blue': '#0070F3',
         'payflo-pink': '#FF4D4D',
         'payflo-gray': '#F4F7FA',

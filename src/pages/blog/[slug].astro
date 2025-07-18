@@ -69,7 +69,7 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
 <Layout title={`${title} - Payflo Blog`} description={excerpt}>
   <!-- Reading Progress Bar -->
   <div class="fixed top-0 left-0 w-full h-1 z-50">
-    <div id="reading-progress" class="h-full bg-gradient-to-r from-payflo-purple to-payflo-blue w-0 transition-all duration-100" role="progressbar" aria-label="Reading progress"></div>
+    <div id="reading-progress" class="h-full bg-gradient-to-r from-rich-green to-payflo-blue w-0 transition-all duration-100" role="progressbar" aria-label="Reading progress"></div>
   </div>
 
   <!-- Hero Section -->
@@ -80,7 +80,7 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
         <!-- Tags -->
         <div class="flex flex-wrap gap-2 mb-8 animate-on-scroll">
           {tags.map((tag: string) => (
-            <span class="px-3 py-1 bg-payflo-purple/10 text-payflo-purple rounded-full text-sm font-medium">
+            <span class="px-3 py-1 bg-rich-green/10 text-rich-green rounded-full text-sm font-medium">
               {tag}
             </span>
           ))}
@@ -140,7 +140,7 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
                 <li>
                   <a 
                     href={`#${heading.id}`}
-                    class="block text-gray-600 hover:text-payflo-purple focus:text-payflo-purple transition-colors duration-200 text-sm focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded"
+                    class="block text-gray-600 hover:text-rich-green focus:text-rich-green transition-colors duration-200 text-sm focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded"
                   >
                     {heading.title}
                   </a>
@@ -157,7 +157,7 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
                 href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center text-gray-600 hover:text-payflo-purple focus:text-payflo-purple transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded p-1"
+                class="flex items-center text-gray-600 hover:text-rich-green focus:text-rich-green transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded p-1"
                 aria-label="Share on Twitter"
               >
                 <Icon name="ph:twitter-logo-duotone" class="h-5 w-5 mr-3" aria-hidden="true" />
@@ -167,7 +167,7 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
                 href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(title)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center text-gray-600 hover:text-payflo-purple focus:text-payflo-purple transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded p-1"
+                class="flex items-center text-gray-600 hover:text-rich-green focus:text-rich-green transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded p-1"
                 aria-label="Share on LinkedIn"
               >
                 <Icon name="ph:linkedin-logo-duotone" class="h-5 w-5 mr-3" aria-hidden="true" />
@@ -175,7 +175,7 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
               </a>
               <button
                 id="copy-link"
-                class="flex items-center text-gray-600 hover:text-payflo-purple focus:text-payflo-purple transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded p-1"
+                class="flex items-center text-gray-600 hover:text-rich-green focus:text-rich-green transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded p-1"
                 aria-label="Copy link to article"
               >
                 <Icon name="ph:link-duotone" class="h-5 w-5 mr-3" aria-hidden="true" />
@@ -199,7 +199,7 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
                 href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(shareUrl)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-gray-600 hover:text-payflo-purple focus:text-payflo-purple transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded p-1"
+                class="text-gray-600 hover:text-rich-green focus:text-rich-green transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded p-1"
                 aria-label="Share on Twitter"
               >
                 <Icon name="ph:twitter-logo-duotone" class="h-6 w-6" aria-hidden="true" />
@@ -208,13 +208,13 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
                 href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(title)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-gray-600 hover:text-payflo-purple focus:text-payflo-purple transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded p-1"
+                class="text-gray-600 hover:text-rich-green focus:text-rich-green transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded p-1"
                 aria-label="Share on LinkedIn"
               >
                 <Icon name="ph:linkedin-logo-duotone" class="h-6 w-6" aria-hidden="true" />
               </a>
               <button
-                class="text-gray-600 hover:text-payflo-purple focus:text-payflo-purple transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded p-1"
+                class="text-gray-600 hover:text-rich-green focus:text-rich-green transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded p-1"
                 id="copy-link-mobile"
                 aria-label="Copy link to article"
               >
@@ -231,7 +231,7 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
                 <article role="listitem">
                   <a 
                     href={`/blog/${post.slug}`}
-                    class="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg focus:shadow-lg transition-all duration-300 hover:-translate-y-1 focus:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2"
+                    class="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg focus:shadow-lg transition-all duration-300 hover:-translate-y-1 focus:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2"
                   >
                     <div class="aspect-video overflow-hidden">
                       <img 
@@ -243,12 +243,12 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
                     <div class="p-6">
                       <div class="flex flex-wrap gap-2 mb-3">
                         {post.tags.map((tag: string) => (
-                          <span class="px-2 py-1 bg-payflo-purple/10 text-payflo-purple rounded-full text-xs">
+                          <span class="px-2 py-1 bg-rich-green/10 text-rich-green rounded-full text-xs">
                             {tag}
                           </span>
                         ))}
                       </div>
-                      <h3 class="font-semibold text-lg group-hover:text-payflo-purple group-focus:text-payflo-purple transition-colors duration-200">
+                      <h3 class="font-semibold text-lg group-hover:text-rich-green group-focus:text-rich-green transition-colors duration-200">
                         {post.title}
                       </h3>
                       <p class="mt-2 text-sm text-gray-600 line-clamp-2">{post.excerpt}</p>
@@ -263,7 +263,7 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
           <div class="mt-16 pt-8 border-t border-gray-200">
             <a 
               href="/blog" 
-              class="flex items-center text-payflo-purple font-medium group focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded"
+              class="flex items-center text-rich-green font-medium group focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded"
             >
               <Icon name="ph:arrow-left-duotone" class="h-5 w-5 mr-2 group-hover:-translate-x-1 group-focus:-translate-x-1 transition-transform duration-200" aria-hidden="true" />
               Back to Blog
@@ -368,10 +368,10 @@ const shareUrl = new URL(Astro.url.pathname, Astro.site).toString();
   .prose {
     --tw-prose-body: theme('colors.gray.600');
     --tw-prose-headings: theme('colors.gray.900');
-    --tw-prose-links: theme('colors.payflo-purple');
+    --tw-prose-links: theme('colors.rich-green');
     --tw-prose-bold: theme('colors.gray.900');
     --tw-prose-quotes: theme('colors.gray.900');
-    --tw-prose-code: theme('colors.payflo-purple');
+    --tw-prose-code: theme('colors.rich-green');
     --tw-prose-hr: theme('colors.gray.200');
     --tw-prose-th-borders: theme('colors.gray.200');
   }

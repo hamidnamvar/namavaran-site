@@ -3,26 +3,26 @@ import { Image } from 'astro:assets';
 import logoSrc from '../assets/logo.svg';
 
 const navItems = [
-  { name: 'Product', href: '/product' },
-  { name: 'Solutions', href: '/solutions' },
-  { name: 'Pricing', href: '/pricing' },
-  { name: 'About Us', href: '/about-us' },
-  { name: 'Blog', href: '/blog' },
+  { name: 'محصولات', href: '/product' },
+  { name: 'راهکارها', href: '/solutions' },
+  { name: 'قیمت‌ها', href: '/pricing' },
+  { name: 'درباره ما', href: '/about-us' },
+  { name: 'بلاگ', href: '/blog' },
 ];
 ---
 
 <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-100" role="banner">
   <div class="container-custom flex items-center justify-between h-20">
-    <a href="/" class="flex items-center transition-transform duration-300 hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded" aria-label="Payflo home">
-      <Image src={logoSrc} alt="Payflo Logo" width={120} height={40} class="transition-all duration-300 hover:brightness-110 focus:brightness-110" />
+    <a href="/" class="flex items-center transition-transform duration-300 hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded" aria-label="خانه نام آوران">
+      <Image src={logoSrc} alt="لوگوی نام آوران" width={120} height={40} class="transition-all duration-300 hover:brightness-110 focus:brightness-110" />
     </a>
     
-    <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center space-x-8" role="navigation" aria-label="Main navigation">
+    <!-- ناوبری دسکتاپ -->
+    <nav class="hidden md:flex items-center space-x-8" role="navigation" aria-label="ناوبری اصلی">
       {navItems.map(item => (
         <a 
           href={item.href} 
-          class="text-gray-700 hover:text-payflo-purple focus:text-payflo-purple transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded px-2 py-1"
+          class="text-gray-700 hover:text-rich-green focus:text-rich-green transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded px-2 py-1"
         >
           {item.name}
         </a>
@@ -30,17 +30,17 @@ const navItems = [
     </nav>
     
     <div class="flex items-center space-x-4">
-      <a href="/login" class="hidden md:inline-block text-payflo-dark hover:text-payflo-purple focus:text-payflo-purple transition-all duration-300 relative focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded px-2 py-1">
-        Log In
-        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-payflo-purple transition-all duration-300 group-hover:w-full"></span>
+      <a href="/login" class="hidden md:inline-block text-payflo-dark hover:text-rich-green focus:text-rich-green transition-all duration-300 relative focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded px-2 py-1">
+        ورود
+        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-rich-green transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="/book-demo" class="btn btn-primary focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2">Book a Demo</a>
+      <a href="/book-demo" class="btn btn-primary focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2">رزرو دموی رایگان</a>
       
-      <!-- Mobile Menu Button -->
+      <!-- دکمه منوی موبایل -->
       <button 
         id="menu-toggle" 
-        class="md:hidden flex items-center transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded p-1" 
-        aria-label="Toggle navigation menu"
+        class="md:hidden flex items-center transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded p-1" 
+        aria-label="باز و بسته کردن منوی ناوبری"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
@@ -51,19 +51,19 @@ const navItems = [
     </div>
   </div>
   
-  <!-- Mobile Menu -->
-  <nav id="mobile-menu" class="hidden md:hidden bg-white w-full border-t border-gray-100" role="navigation" aria-label="Mobile navigation">
+  <!-- منوی موبایل -->
+  <nav id="mobile-menu" class="hidden md:hidden bg-white w-full border-t border-gray-100" role="navigation" aria-label="ناوبری موبایل">
     <div class="container-custom py-4 space-y-4">
       {navItems.map((item, index) => (
         <a 
           href={item.href} 
-          class="block py-2 px-2 text-gray-700 hover:text-payflo-purple focus:text-payflo-purple transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded"
+          class="block py-2 px-2 text-gray-700 hover:text-rich-green focus:text-rich-green transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded"
           style={`transition-delay: ${index * 50}ms;`}
         >
           {item.name}
         </a>
       ))}
-      <a href="/login" class="block py-2 px-2 text-gray-700 hover:text-payflo-purple focus:text-payflo-purple transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2 rounded">Log In</a>
+      <a href="/login" class="block py-2 px-2 text-gray-700 hover:text-rich-green focus:text-rich-green transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2 rounded">ورود</a>
     </div>
   </nav>
 </header>

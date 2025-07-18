@@ -63,7 +63,7 @@ const solutions = [
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {solutions.map((solution, index) => (
           <div class={`bg-white rounded-xl p-8 shadow-lg animate-on-scroll delay-${index + 2}`}>
-            <div class="h-12 w-12 rounded-lg bg-gradient-to-r from-payflo-purple to-payflo-blue flex items-center justify-center text-white">
+            <div class="h-12 w-12 rounded-lg bg-gradient-to-r from-rich-green to-payflo-blue flex items-center justify-center text-white">
               <Icon name={solution.icon} class="h-6 w-6" />
             </div>
             <h3 class="mt-6 text-2xl font-semibold">{solution.title}</h3>
@@ -71,7 +71,7 @@ const solutions = [
             <ul class="mt-6 space-y-3">
               {solution.features.map(feature => (
                 <li class="flex items-center text-gray-700">
-                  <Icon name="ph:check-circle-duotone" class="h-5 w-5 text-payflo-purple mr-2" />
+                  <Icon name="ph:check-circle-duotone" class="h-5 w-5 text-rich-green mr-2" />
                   {feature}
                 </li>
               ))}

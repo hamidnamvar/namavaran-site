@@ -62,7 +62,7 @@ const allTags = Array.from(
           <div>
             <div class="flex flex-wrap gap-2 mb-4">
               {featuredPost.data.tags.map((tag: string) => (
-                <span class="px-3 py-1 bg-payflo-purple/10 text-payflo-purple rounded-full text-sm font-medium">
+                <span class="px-3 py-1 bg-rich-green/10 text-rich-green rounded-full text-sm font-medium">
                   {tag}
                 </span>
               ))}
@@ -71,7 +71,7 @@ const allTags = Array.from(
             <h3 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
               <a 
                 href={`/blog/${featuredPost.id}`}
-                class="hover:text-payflo-purple focus:text-payflo-purple transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-4 rounded"
+                class="hover:text-rich-green focus:text-rich-green transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-4 rounded"
               >
                 {featuredPost.data.title}
               </a>
@@ -107,7 +107,7 @@ const allTags = Array.from(
             
             <a 
               href={`/blog/${featuredPost.id}`} 
-              class="btn btn-primary inline-flex items-center group focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2"
+              class="btn btn-primary inline-flex items-center group focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2"
               aria-label={`Read full article: ${featuredPost.data.title}`}
             >
               Read Full Article
@@ -126,7 +126,7 @@ const allTags = Array.from(
         <span class="text-sm font-medium text-gray-700">Filter by topic:</span>
         <div class="flex flex-wrap gap-2" role="group" aria-label="Filter articles by topic">
           <button 
-            class="filter-tag px-3 py-1 bg-white text-gray-700 rounded-full text-sm border border-gray-200 hover:bg-payflo-purple hover:text-white focus:bg-payflo-purple focus:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2"
+            class="filter-tag px-3 py-1 bg-white text-gray-700 rounded-full text-sm border border-gray-200 hover:bg-rich-green hover:text-white focus:bg-rich-green focus:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2"
             data-tag="all"
             aria-pressed="true"
           >
@@ -134,7 +134,7 @@ const allTags = Array.from(
           </button>
           {allTags.map((tag: string) => (
             <button 
-              class="filter-tag px-3 py-1 bg-white text-gray-700 rounded-full text-sm border border-gray-200 hover:bg-payflo-purple hover:text-white focus:bg-payflo-purple focus:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2"
+              class="filter-tag px-3 py-1 bg-white text-gray-700 rounded-full text-sm border border-gray-200 hover:bg-rich-green hover:text-white focus:bg-rich-green focus:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2"
               data-tag={tag.toLowerCase()}
               aria-pressed="false"
             >
@@ -161,7 +161,7 @@ const allTags = Array.from(
           >
             <a 
               href={`/blog/${post.id}`}
-              class="block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg focus:shadow-lg transition-all duration-300 hover:-translate-y-1 focus:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-payflo-purple focus:ring-offset-2"
+              class="block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg focus:shadow-lg transition-all duration-300 hover:-translate-y-1 focus:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-rich-green focus:ring-offset-2"
             >
               <div class="aspect-video overflow-hidden">
                 <img 
@@ -175,13 +175,13 @@ const allTags = Array.from(
               <div class="p-6">
                 <div class="flex flex-wrap gap-2 mb-3">
                   {post.data.tags.map((tag: string) => (
-                    <span class="px-2 py-1 bg-payflo-purple/10 text-payflo-purple rounded-full text-xs font-medium">
+                    <span class="px-2 py-1 bg-rich-green/10 text-rich-green rounded-full text-xs font-medium">
                       {tag}
                     </span>
                   ))}
                 </div>
                 
-                <h3 class="font-semibold text-lg mb-3 group-hover:text-payflo-purple group-focus:text-payflo-purple transition-colors duration-200 line-clamp-2">
+                <h3 class="font-semibold text-lg mb-3 group-hover:text-rich-green group-focus:text-rich-green transition-colors duration-200 line-clamp-2">
                   {post.data.title}
                 </h3>
                 
@@ -228,7 +228,7 @@ const allTags = Array.from(
   </section>
 
   <!-- Newsletter Signup -->
-  <section class="py-20 bg-gradient-to-r from-payflo-purple to-payflo-blue">
+  <section class="py-20 bg-gradient-to-r from-rich-green to-payflo-blue">
     <div class="container-custom text-center">
       <div class="max-w-2xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 animate-on-scroll">
@@ -245,13 +245,13 @@ const allTags = Array.from(
             id="email"
             name="email"
             placeholder="Enter your email"
-            class="flex-1 px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-payflo-purple focus:outline-none"
+            class="flex-1 px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rich-green focus:outline-none"
             required
             aria-required="true"
           />
           <button 
             type="submit" 
-            class="px-6 py-3 bg-white text-payflo-purple font-medium rounded-lg hover:bg-gray-50 focus:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-payflo-purple"
+            class="px-6 py-3 bg-white text-rich-green font-medium rounded-lg hover:bg-gray-50 focus:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rich-green"
           >
             Subscribe
           </button>
@@ -278,13 +278,13 @@ const allTags = Array.from(
         
         // Update active state
         filterTags.forEach(t => {
-          t.classList.remove('bg-payflo-purple', 'text-white');
+          t.classList.remove('bg-rich-green', 'text-white');
           t.classList.add('bg-white', 'text-gray-700');
           t.setAttribute('aria-pressed', 'false');
         });
         
         tag.classList.remove('bg-white', 'text-gray-700');
-        tag.classList.add('bg-payflo-purple', 'text-white');
+        tag.classList.add('bg-rich-green', 'text-white');
         tag.setAttribute('aria-pressed', 'true');
         
         // Filter posts

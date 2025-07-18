@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --gradient-purple-blue: linear-gradient(135deg, #7928CA 0%, #0070F3 100%);
+  --gradient-green-rich: linear-gradient(135deg, #0bab64 0%, #3bb78f 100%);
 }
 
 html {
@@ -80,7 +80,7 @@ body {
 
 .gradient-text {
   @apply bg-clip-text text-transparent;
-  background-image: var(--gradient-purple-blue);
+  background-image: var(--gradient-green-rich);
 }
 
 /* ===== Button Styles & Effects ===== */
@@ -94,7 +94,7 @@ body {
 .btn:hover,
 .btn:focus {
   transform: translateY(-2px);
-  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 7px 14px rgba(30, 126, 52, 0.3), 0 3px 6px rgba(15, 93, 39, 0.3);
 }
 
 .btn:active {
@@ -102,7 +102,7 @@ body {
 }
 
 .btn:focus {
-  outline: 2px solid theme('colors.payflo-purple');
+  outline: 2px solid theme('colors.rich-green');
   outline-offset: 2px;
 }
 
@@ -119,7 +119,7 @@ body {
 }
 
 .btn-primary {
-  @apply bg-payflo-purple text-white hover:bg-opacity-90;
+  @apply bg-rich-green text-white hover:bg-rich-green-light active:bg-rich-green-dark;
 }
 
 .btn-secondary {
@@ -168,7 +168,7 @@ nav a::after {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: theme('colors.payflo-purple');
+  background-color: theme('colors.rich-green');
   transition: width 0.3s ease;
 }
 
@@ -178,7 +178,7 @@ nav a:focus::after {
 }
 
 .active-nav-link {
-  @apply text-payflo-purple;
+  @apply text-rich-green;
 }
 
 .active-nav-link::after {
@@ -191,7 +191,7 @@ nav a:focus::after {
   top: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(to right, theme('colors.payflo-purple'), theme('colors.payflo-blue'));
+  background: linear-gradient(to right, theme('colors.rich-green'), theme('colors.rich-green-light'));
   z-index: 100;
   width: 0%;
   transition: width 0.1s ease;
@@ -223,7 +223,7 @@ nav a:focus::after {
 }
 
 .faq-summary-open {
-  @apply text-payflo-purple;
+  @apply text-rich-green;
 }
 
 /* ===== Mobile Menu Animations ===== */
@@ -285,7 +285,7 @@ nav a:focus::after {
 
 /* ===== Focus Indicators ===== */
 *:focus {
-  outline: 2px solid theme('colors.payflo-purple');
+  outline: 2px solid theme('colors.rich-green');
   outline-offset: 2px;
 }
 
@@ -299,7 +299,7 @@ nav a:focus::after {
   position: absolute;
   top: -40px;
   left: 6px;
-  background: theme('colors.payflo-purple');
+  background: theme('colors.rich-green');
   color: white;
   padding: 8px;
   border-radius: 4px;

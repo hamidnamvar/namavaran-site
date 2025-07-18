@@ -139,7 +139,7 @@ const timeline = [
             class="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300 animate-on-scroll" 
             style={`animation-delay: ${index * 0.1}s`}
           >
-            <div class="h-12 w-12 rounded-lg bg-gradient-to-r from-payflo-purple to-payflo-blue flex items-center justify-center text-white mb-6">
+            <div class="h-12 w-12 rounded-lg bg-gradient-to-r from-rich-green to-payflo-blue flex items-center justify-center text-white mb-6">
               <Icon name={value.icon} class="h-6 w-6" />
             </div>
             <h3 class="text-xl font-semibold">{value.title}</h3>
@@ -162,9 +162,9 @@ const timeline = [
         <div class="relative">
           {timeline.map((event, index) => (
             <div class="relative pl-8 pb-12 animate-on-scroll" style={`animation-delay: ${index * 0.15}s`}>
-              <div class="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-payflo-purple to-payflo-blue"></div>
-              <div class="absolute left-[-4px] top-2 h-2 w-2 rounded-full bg-payflo-purple"></div>
-              <div class="text-sm font-semibold text-payflo-purple">{event.year}</div>
+              <div class="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-rich-green to-payflo-blue"></div>
+              <div class="absolute left-[-4px] top-2 h-2 w-2 rounded-full bg-rich-green"></div>
+              <div class="text-sm font-semibold text-rich-green">{event.year}</div>
               <h3 class="mt-2 text-xl font-semibold">{event.title}</h3>
               <p class="mt-2 text-gray-600">{event.description}</p>
             </div>
@@ -201,26 +201,26 @@ const timeline = [
               <img 
                 src={member.avatar} 
                 alt={member.name} 
-                class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-payflo-purple/20"
+                class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-rich-green/20"
               />
               <div class="absolute bottom-4 right-0 h-6 w-6 rounded-full bg-green-400 border-2 border-white"></div>
             </div>
             <h3 class="text-xl font-semibold">{member.name}</h3>
-            <p class="text-payflo-purple font-medium">{member.role}</p>
+            <p class="text-rich-green font-medium">{member.role}</p>
             <p class="mt-3 text-gray-600 text-sm">{member.bio}</p>
             <div class="mt-4 flex justify-center space-x-3">
               {member.social.linkedin && (
-                <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-payflo-purple">
+                <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-rich-green">
                   <Icon name="ph:linkedin-logo-duotone" class="h-5 w-5" />
                 </a>
               )}
               {member.social.twitter && (
-                <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-payflo-purple">
+                <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-rich-green">
                   <Icon name="ph:twitter-logo-duotone" class="h-5 w-5" />
                 </a>
               )}
               {member.social.github && (
-                <a href={member.social.github} target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-payflo-purple">
+                <a href={member.social.github} target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-rich-green">
                   <Icon name="ph:github-logo-duotone" class="h-5 w-5" />
                 </a>
               )}
@@ -231,7 +231,7 @@ const timeline = [
     </div>
   </section>
   
-  <section class="py-20 bg-gradient-to-r from-payflo-purple to-payflo-blue text-white relative overflow-hidden">
+  <section class="py-20 bg-gradient-to-r from-rich-green to-payflo-blue text-white relative overflow-hidden">
     <div class="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
     <div class="container-custom relative">
       <div class="max-w-3xl mx-auto text-center animate-on-scroll">
@@ -245,7 +245,7 @@ const timeline = [
           We're on a mission to transform payroll infrastructure and we're looking for talented people to join us.
         </p>
         <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/careers" class="btn bg-white text-payflo-purple hover:bg-opacity-90">
+          <a href="/careers" class="btn bg-white text-rich-green hover:bg-opacity-90">
             View Open Positions
           </a>
           <a href="/contact" class="btn bg-transparent border-2 border-white hover:bg-white/10">
